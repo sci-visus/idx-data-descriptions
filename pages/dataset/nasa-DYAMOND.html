@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Dyamond Data</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>NASA DYAMOND Data</h1>
+        <nav><a href="../html/dataset_list.html">Back to List</a></nav>
+    </header>
+    <main>
+        <section class="dataset-details">
+            <h2>General Information</h2>
+            <table>
+                <tr>
+                    <th>Last Modified</th>
+                    <td>October 15, 2023</td>
+                </tr>
+                <tr>
+                    <th>Data Hosted</th>
+                    <td>Sealstorage</td>
+                </tr>
+                <tr>
+                    <th>2D Fields</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>3D Fields</th>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <th>Available Timesteps</th>
+                    <td>10365</td>
+                </tr>
+                <tr>
+                    <th>Dimensions</th>
+                    <td>8640*6480*90</td>
+                </tr>
+                <tr>
+                    <th>Total Available size</th>
+                    <td>1.1PB</td>
+                </tr>
+                <tr>
+                    <th>Data Compression</th>
+                    <td>ZIP</td>
+                </tr>
+                <tr>
+                    <th>Original Data Location</th>
+                    <td><a >NASA Pleiades Supercomputer</a></td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="general-overview">
+            <h2>Dataset Overview</h2>
+            <p>The NASA DYAMOND dataset provides comprehensive atmospheric data collected from various simulations. This dataset includes high-resolution 2D and 3D fields that capture detailed atmospheric phenomena. The data is essential for studying climate patterns, weather forecasting, and atmospheric research. It includes multiple timesteps, allowing for the analysis of temporal changes and trends. The dataset is hosted on a reliable repository, ensuring easy access and consistent availability for researchers and scientists worldwide.</p>
+        </section>
+
+        <section class="field-descriptions">
+            <h2>Field Descriptions</h2>
+            <h3>Field 1</h3>
+            <p>Details about field 1</p>
+            <h3>Field 2</h3>
+            <p>Details about field 2</p>
+            <h3>Field 3</h3>
+            <p>Details about field 3</p>
+        </section>
+
+        <section class="additional-info">
+            <h2>Additional Information</h2>
+            <p>Other relevant information about the dataset, such as methodology, processing steps, and any other pertinent details.</p>
+        </section>
+        <section class="additional-info">
+
+            <h2>Example Usecases</h2>
+            <p>This section provides access to github projects, jupyter notebooks and dashboards using these data.</p>
+        </section>
+
+        <section class="example-usecases">
+            <h2>Related Publications</h2>
+            <ul>
+                <li><a href="../../index.html">Web-based visualization and analytics of Petascale data: Equity as a tide that lifts all boats.</a></li>
+            </ul>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch('../template/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Descriptions Overview</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="pages/images/visus-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>IDX Dataset Descriptions</h1>
+    </header>
+    <main>
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>Welcome to the Dataset Descriptions website. Our main goal is to provide quick and comprehensive access to various datasets, their variables, and other important information about each field. Here you will find:</p>
+            <ul>
+                <li><strong>General Information:</strong> Basic details about each dataset including creation/modification dates, hosting repository, the number of fields, available timesteps, dimensions, and links to the original data.</li>
+                <li><strong>Field Descriptions:</strong> Detailed descriptions of each field within the datasets, helping users understand the specific variables and their significance.</li>
+                <li><strong>Additional Information:</strong> Other relevant details such as the methodology, processing steps, and any other pertinent information about the datasets.</li>
+                <li><strong>Related Publications:</strong> A list of publications that have utilized these datasets, providing insights into their applications and impact in scientific research.</li>
+                <li><strong>Example Use Cases:</strong> Practical examples of how the datasets can be used in various scientific workflows and research scenarios.</li>
+            </ul>
+            <p>Explore our datasets by navigating to the list of datasets below.</p>
+            <nav>
+                <a href="pages/html/dataset_list.html" class="button">View Datasets</a>
+            </nav>
+        </section>
+
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch('pages/template/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

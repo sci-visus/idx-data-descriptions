@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset Descriptions</title>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="icon" href="../images/visus-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Dataset Descriptions</h1>
+        <nav><a href="../../index.html">Overview</a></nav>
+    </header>
+    <main>
+        <section class="dataset-list">
+            <article class="dataset">
+                <h2><a href="../dataset/nasa-DYAMOND.html">NASA DYAMOND Data</a></h2>
+                <p>Description of DYAMOND data</p>
+            </article>
+            <article class="dataset">
+                <h2><a href="../dataset/nasa-llc2160.html">NASA LLC2160</a></h2>
+                <p>Description of NASA LLC2160 Data</p>
+            </article>
+            <article class="dataset">
+                <h2><a href="../dataset/cmip6.html">NEX-GDDP-CMIP6</a></h2>
+                <p>Description of NEX-GDDP-CMIP6</p>
+            </article>
+            <article class="dataset">
+                <h2><a href="../dataset/wired.html">Wired Firesmoke Data</a></h2>
+                <p>Description of Wired Data</p>
+            </article>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script>
+        fetch('../template/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+</body>
+</html>

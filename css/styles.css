@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #6c7ae0;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+}
+
+.overview, .data-democratization, .scientific-benefits, .dataset-details, .field-descriptions, .additional-info, .example-usecases, .related-publications {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+.overview h2, .data-democratization h2, .scientific-benefits h2, .dataset-details h2, .field-descriptions h2, .additional-info h2, .related-publications h2 {
+    margin-top: 0;
+}
+
+.overview ul, .data-democratization ul, .scientific-benefits ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.overview .button, .data-democratization .button, .scientific-benefits .button {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: #6c7ae0;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.overview .button:hover, .data-democratization .button:hover, .scientific-benefits .button:hover {
+    background-color: #5b66cc;
+}
+
+.dataset-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.dataset {
+    background-color: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dataset h2 {
+    margin: 0 0 0.5em 0;
+}
+
+.dataset a {
+    text-decoration: none;
+    color: #6c7ae0;
+}
+
+.dataset a:hover {
+    text-decoration: underline;
+}
+
+.dataset-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dataset-details th, .dataset-details td {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+}
+
+.dataset-details th {
+    background-color: #f4f4f9;
+    text-align: left;
+}
+
+.related-publications ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.related-publications a {
+    text-decoration: none;
+    color: #6c7ae0;
+}
+
+.related-publications a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #6c7ae0;
+    color: white;
+    text-align: center;
+    padding: 0.5em 0;  
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;  
+}
+
+footer p {
+    margin: 0; 
+}

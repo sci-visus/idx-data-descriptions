@@ -6,11 +6,32 @@
     <title>Dataset Descriptions</title>
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="icon" href="../images/visus-logo.png" type="image/x-icon">
+    <style>
+        header h1 {
+            font-size: 1.5rem; /* Make the text smaller */
+            margin: 0;
+        }
+        header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        header .back-button {
+            position: absolute;
+            left: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Dataset Descriptions</h1>
-        <nav><a href="../../index.html">Overview</a></nav>
+
+        <button class="btn btn-light back-button" onclick="location.href='../../index.html'">
+            <i class="fas fa-arrow-left"></i> Overview
+        </button>
+        <h1>Dataset Lists</h1>
+        
     </header>
     <main>
         <section class="dataset-list">

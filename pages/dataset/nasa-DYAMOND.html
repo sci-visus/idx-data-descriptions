@@ -3,17 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NASA Dyamond Data</title>
+    <title>NASA DYAMOND Data</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        header h1 {
+            font-size: 1.5rem; /* Make the text smaller */
+            margin: 0;
+        }
+        header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        header .back-button {
+            position: absolute;
+            left: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <button class="btn btn-light back-button" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
         <h1>NASA DYAMOND Data</h1>
-        <nav><a href="../html/dataset_list.html">Back to List</a></nav>
     </header>
     <main>
         <section class="dataset-details">
-            <h2>General Information</h2>
+            <h3>General Information</h3>
             <table>
                 <tr>
                     <th>Last Modified</th>
@@ -25,7 +48,7 @@
                 </tr>
                 <tr>
                     <th>2D Fields</th>
-                    <td>5</td>
+                    <td>0</td>
                 </tr>
                 <tr>
                     <th>3D Fields</th>
@@ -49,52 +72,102 @@
                 </tr>
                 <tr>
                     <th>Original Data Location</th>
-                    <td><a >NASA Pleiades Supercomputer</a></td>
+                    <td><a>NASA Pleiades Supercomputer</a></td>
                 </tr>
             </table>
         </section>
 
         <section class="general-overview">
-            <h2>Dataset Overview</h2>
+            <h3>Dataset Overview</h3>
             <p>The NASA DYAMOND dataset provides comprehensive atmospheric data collected from various simulations. This dataset includes high-resolution 2D and 3D fields that capture detailed atmospheric phenomena. The data is essential for studying climate patterns, weather forecasting, and atmospheric research. It includes multiple timesteps, allowing for the analysis of temporal changes and trends. The dataset is hosted on a reliable repository, ensuring easy access and consistent availability for researchers and scientists worldwide.</p>
         </section>
 
         <section class="field-descriptions">
-            <h2>Field Descriptions</h2>
-            <h3>Field 1</h3>
-            <p>Details about field 1</p>
-            <h3>Field 2</h3>
-            <p>Details about field 2</p>
-            <h3>Field 3</h3>
-            <p>Details about field 3</p>
+            <h3>Field Descriptions</h3>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Short Name</th>
+                    <th>Description</th>
+                    <th>Units</th>
+                    <th>Shape</th>
+                    <th>Dimensions</th>
+                </tr>
+                <tr>
+                    <td>Eastwest Ocean Velocity</td>
+                    <td>SSU</td>
+                    <td>Sea-surface east-west Velocity</td>
+                    <td>m/s</td>
+                    <td>3D</td>
+                    <td>Lat, Lon, Depth</td>
+                </tr>
+                <tr>
+                    <td>North-South Ocean Velocity</td>
+                    <td>SSV</td>
+                    <td>Sea-surface north-south Velocity</td>
+                    <td>m/s</td>
+                    <td>3D</td>
+                    <td>Lat, Lon, Depth</td>
+                </tr>
+
+                <tr>
+                    <td>Vertical Velocity</td>
+                    <td>SSW</td>
+                    <td>Sea-surface Vertical Velocity</td>
+                    <td>m/s</td>
+                    <td>3D</td>
+                    <td>Lat, Lon, Depth</td>
+                </tr>
+                <tr>
+                    <td>Temperature</td>
+                    <td>theta</td>
+                    <td>Sea-surface Temperature</td>
+                    <td>deg. C</td>
+                    <td>3D</td>
+                    <td> Lat, Lon, Depth</td>
+                </tr>
+                <tr>
+                    <td>Salinity</td>
+                    <td>Salt</td>
+                    <td>Sea-surface Salinity</td>
+                    <td>g/kg</td>
+                    <td>3D</td>
+                    <td>Lat, Lon, Depth</td>
+                </tr>
+            </table>
         </section>
 
+
         <section class="additional-info">
-            <h2>Additional Information</h2>
+            <h3>Additional Information</h3>
             <p>Other relevant information about the dataset, such as methodology, processing steps, and any other pertinent details.</p>
         </section>
         <section class="example-usecases">
-
             <h2>Example Usecases</h2>
-            <p>This section provides access to github projects, jupyter notebooks and dashboards using these data.</p>
+            <p>Dashboard launched at: 
+                <ul><li>
+                    <a href="http://chpc3.nationalsciencedatafabric.org:11957/dashboards">Petascale Climate Data Dashboard</a>
+                </li>
+                <li>
+                    <a href="http://chpc3.nationalsciencedatafabric.org:11857">Coupled Dashboard</a>
+                </li>
+            </ul> 
         </section>
 
         <section class="to-do">
-            <h2>To Do</h2>
+            <h3>To Do</h3>
             <ul> 
                 <li>
-                <p>Extract Metadata for all fields</p>
-
+                    <p>Extract Metadata for all fields</p>
                 </li>
                 <li>
                     <p>Move entire dataset to Sealstorage</p>
-    
-                    </li>
+                </li>
             </ul>
         </section>
 
         <section class="related-publication">
-            <h2>Related Publications</h2>
+            <h3>Related Publications</h3>
             <ul>
                 <li><a href="../../index.html">Web-based visualization and analytics of Petascale data: Equity as a tide that lifts all boats.</a></li>
             </ul>
@@ -108,5 +181,9 @@
                 document.getElementById('footer').innerHTML = data;
             });
     </script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

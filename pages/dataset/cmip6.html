@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NEX_GDDP_CMIP6</title>
     <link rel="stylesheet" href="../../css/styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        header h1 {
+            font-size: 1.5rem; /* Make the text smaller */
+            margin: 0;
+        }
+        header {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+        header .back-button {
+            position: absolute;
+            left: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <button class="btn btn-light back-button" onclick="history.back()">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
         <h1>NEX_GDDP_CMIP6</h1>
-        <nav><a href="../html/dataset_list.html">Back to List</a></nav>
     </header>
     <main>
         <section class="dataset-details">
-            <h2>General Information</h2>
+            <h3>General Information</h3>
             <table>
                 <tr>
                     <th>Last Modified</th>
@@ -59,13 +82,13 @@
         </section>
 
         <section class="general-overview">
-            <h2>Dataset Overview</h2>
+            <h3>Dataset Overview</h3>
             <p>The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate scenarios derived from the General Circulation Model (GCM) runs conducted under the Coupled Model 
                 Intercomparison Project Phase 6 (CMIP6) and across two of the four “Tier 1” greenhouse gas emissions scenarios known as Shared Socioeconomic Pathways (SSPs). 
                 (Source: <a href="https://planetarycomputer.microsoft.com/dataset/nasa-nex-gddp-cmip6#overview" >MSFT Planetary Computer</a>)</p>
         </section>
         <section class="field-descriptions">
-            <h2>Field Descriptions</h2>
+            <h3>Field Descriptions</h3>
             <table>
                 <tr>
                     <th>Name</th>
@@ -151,17 +174,17 @@
         </section>
 
         <section class="additional-info">
-            <h2>Additional Information</h2>
+            <h3>Additional Information</h3>
             <p>Other relevant information about the dataset, such as methodology, processing steps, and any other pertinent details.</p>
         </section>
         <section class="example-usecases">
 
-            <h2>Example Usecases</h2>
+            <h3>Example Usecases</h3>
             <p>Jupyter notebooks to convert/analyse/visualize these data are available here: <a href="https://github.com/sci-visus/NSDF-examples/tree/main/climate">Github</a> </p>
         </section>
         <section class="to-do">
 
-            <h2>To Do</h2>
+            <h3>To Do</h3>
             <ul> 
                 <li>
                 <p>Convert entire dataset to IDX format</p>
@@ -183,5 +206,9 @@
                 document.getElementById('footer').innerHTML = data;
             });
     </script>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

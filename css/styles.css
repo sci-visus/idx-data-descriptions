@@ -31,7 +31,7 @@ main {
     padding: 2em;
 }
 
-.overview, .data-democratization, .scientific-benefits, .dataset-details, .field-descriptions, .additional-info, .example-usecases, .related-publications {
+.overview, .data-democratization, .scientific-benefits, .dataset-details, .field-descriptions, .additional-info, .example-usecases, .to-do,  .related-publications {
     background-color: white;
     padding: 2em;
     border-radius: 8px;
@@ -130,4 +130,19 @@ footer {
 
 footer p {
     margin: 0; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
 }

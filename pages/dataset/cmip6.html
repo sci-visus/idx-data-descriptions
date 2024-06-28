@@ -17,31 +17,31 @@
             <table>
                 <tr>
                     <th>Last Modified</th>
-                    <td>October 15, 2023</td>
+                    <td>March 15, 2024</td>
                 </tr>
                 <tr>
                     <th>Data Hosted</th>
-                    <td>Sealstorage</td>
+                    <td>Sealstorage and Atlantis</td>
                 </tr>
                 <tr>
                     <th>2D Fields</th>
-                    <td>5</td>
+                    <td>9</td>
                 </tr>
                 <tr>
-                    <th>3D Fields</th>
-                    <td>5</td>
+                    <th>Lat/Lon Extent</th>
+                    <td>[-59.875,89.875],[0.125,359.875]</td>
                 </tr>
                 <tr>
                     <th>Available Timesteps</th>
-                    <td>10365</td>
+                    <td>Year 1950 to Year 2100</td>
                 </tr>
                 <tr>
                     <th>Dimensions</th>
-                    <td>8640*6480*90</td>
+                    <td>600*1440</td>
                 </tr>
                 <tr>
                     <th>Total Available size</th>
-                    <td>1.1PB</td>
+                    <td>1 TB</td>
                 </tr>
                 <tr>
                     <th>Data Compression</th>
@@ -49,42 +49,131 @@
                 </tr>
                 <tr>
                     <th>Original Data Location</th>
-                    <td><a >NASA Pleiades Supercomputer</a></td>
+                    <td><a href="https://planetarycomputer.microsoft.com/dataset/nasa-nex-gddp-cmip6#overview" >MSFT Planetary/ AWS</a></td>
+                </tr>
+                <tr>
+                    <th>Original Data Format</th>
+                    <td><a >NetCDF</a></td>
                 </tr>
             </table>
         </section>
 
         <section class="general-overview">
             <h2>Dataset Overview</h2>
-            <p>The NASA DYAMOND dataset provides comprehensive atmospheric data collected from various simulations. This dataset includes high-resolution 2D and 3D fields that capture detailed atmospheric phenomena. The data is essential for studying climate patterns, weather forecasting, and atmospheric research. It includes multiple timesteps, allowing for the analysis of temporal changes and trends. The dataset is hosted on a reliable repository, ensuring easy access and consistent availability for researchers and scientists worldwide.</p>
+            <p>The NEX-GDDP-CMIP6 dataset is comprised of global downscaled climate scenarios derived from the General Circulation Model (GCM) runs conducted under the Coupled Model 
+                Intercomparison Project Phase 6 (CMIP6) and across two of the four “Tier 1” greenhouse gas emissions scenarios known as Shared Socioeconomic Pathways (SSPs). 
+                (Source: <a href="https://planetarycomputer.microsoft.com/dataset/nasa-nex-gddp-cmip6#overview" >MSFT Planetary Computer</a>)</p>
         </section>
-
         <section class="field-descriptions">
             <h2>Field Descriptions</h2>
-            <h3>Field 1</h3>
-            <p>Details about field 1</p>
-            <h3>Field 2</h3>
-            <p>Details about field 2</p>
-            <h3>Field 3</h3>
-            <p>Details about field 3</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Short Name</th>
+                    <th>Description</th>
+                    <th>Units</th>
+                    <th>Shape</th>
+                    <th>Dimensions</th>
+                </tr>
+                <tr>
+                    <td>Near-Surface Air Temperature</td>
+                    <td>tas</td>
+                    <td>Daily average near-surface air temperature</td>
+                    <td>K</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Max Near-Surface Air Temperature</td>
+                    <td>tasmax</td>
+                    <td>Daily maximum near-surface air temperature</td>
+                    <td>K</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Min Near-Surface Air Temperature</td>
+                    <td>tasmin</td>
+                    <td>Daily minimum near-surface air temperature</td>
+                    <td>K</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Precipitation Flux</td>
+                    <td>pr</td>
+                    <td>Daily precipitation amount</td>
+                    <td>kg/m²/s</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Snowfall Flux</td>
+                    <td>prsn</td>
+                    <td>Daily snowfall amount</td>
+                    <td>kg/m²/s</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Sea Level Pressure</td>
+                    <td>psl</td>
+                    <td>Daily average sea level pressure</td>
+                    <td>Pa</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Surface Downwelling Shortwave Radiation</td>
+                    <td>rsds</td>
+                    <td>Daily surface downwelling shortwave radiation</td>
+                    <td>W/m²</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Surface Downwelling Longwave Radiation</td>
+                    <td>rlds</td>
+                    <td>Daily surface downwelling longwave radiation</td>
+                    <td>W/m²</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+                <tr>
+                    <td>Near-Surface Wind Speed</td>
+                    <td>sfcWind</td>
+                    <td>Daily average near-surface wind speed</td>
+                    <td>m/s</td>
+                    <td>2D</td>
+                    <td>Time, Lat, Lon</td>
+                </tr>
+            </table>
         </section>
 
         <section class="additional-info">
             <h2>Additional Information</h2>
             <p>Other relevant information about the dataset, such as methodology, processing steps, and any other pertinent details.</p>
         </section>
-        <section class="additional-info">
+        <section class="example-usecases">
 
             <h2>Example Usecases</h2>
-            <p>This section provides access to github projects, jupyter notebooks and dashboards using these data.</p>
+            <p>Jupyter notebooks to convert/analyse/visualize these data are available here: <a href="https://github.com/sci-visus/NSDF-examples/tree/main/climate">Github</a> </p>
         </section>
+        <section class="to-do">
 
-        <section class="example-usecases">
-            <h2>Related Publications</h2>
-            <ul>
-                <li><a href="../../index.html">Web-based visualization and analytics of Petascale data: Equity as a tide that lifts all boats.</a></li>
+            <h2>To Do</h2>
+            <ul> 
+                <li>
+                <p>Convert entire dataset to IDX format</p>
+
+                </li>
+                <li>
+                    <p>Deploy interactive dashboard for the entire dataset</p>
+    
+                    </li>
             </ul>
         </section>
+
     </main>
     <div id="footer"></div>
     <script>
